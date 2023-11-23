@@ -1,0 +1,51 @@
+@import url(reset.css);
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-image: url(../picture/background.jpg);
+    text-align: center;
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    margin: 20px;
+}
+.main a {
+    color: black;
+    font-size: 30px;
+}
+
+h2+p {
+    font-size: 16px;
+}
+
+.main div {
+    margin: 50px auto;
+    width: 300px;
+}
+
+p span {
+    color: white;
+}
+
+.main div img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.footer {
+    background-color: black;
+    padding: 40px 0;
+    font-size: small;
+}
+
+.footer a {
+    color: gray;
+}
