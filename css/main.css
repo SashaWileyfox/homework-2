@@ -1,32 +1,78 @@
 @import url(reset.css);
 @import url(pictures.css);
 
-.container {
+
+
+.header, .footer {
+    height: 75px;
+    background-color: black;
+}
+
+.header-container, .footer-container {
     width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 0;
+    text-align: center;
+
+}
+
+.logo {
+    width: 250px;
+    font-size: 30px;
+    color: gray;
+}
+
+.menu {
+    font-size: 0;
+    width: 800px;
+    text-transform: uppercase;
+}
+
+.menu > li + li {
+    margin-left: 30px;
+}
+
+.logo, .menu, .login, .menu>li {
+    display: inline-block;
+}
+
+.menu > li a, .login {
+    font-size: 23px;
+    color: gray;
+}
+
+.login {
+    width: 150px;
+    padding: 5px;
+    background-color: rgb(0, 85, 255);
+    border-radius: 25px;
+    color: white;
+}
+
+.main {
+    width: 1200px;
+    height: 100%;
     margin: 0 auto;
     background-image: url(../picture/background.jpg);
     text-align: center;
-    padding-top: 30px;
+    padding: 75px 0;
 }
 
-h1 {
-    font-size: 50px;
-}
-
-h2 {
-    margin: 20px;
-}
-.main a {
+.link-mountain{
     color: black;
     font-size: 30px;
 }
-
-h2+p {
+.section-main > h2{
+    margin: 15px;
+}
+.section-main h2 +p {
     font-size: 16px;
 }
 
-.main div {
-    margin: 50px auto;
+.section-main {
+    margin: 0 auto 50px ;
     width: 300px;
 }
 
@@ -34,32 +80,54 @@ p span {
     color: white;
 }
 
-.main div img {
+.section-main > img {
     width: 200px;
     height: 200px;
     border-radius: 100%;
 }
 
 .footer {
-    background-color: black;
-    padding: 40px 0;
     font-size: small;
 }
 
-.footer a {
+.footer a, .footer p {
     color: gray;
     font-size: 15px;
 }
 
-
-table{
+table {
     width: 500px;
     height: 300px;
     margin: 100px auto;
     box-shadow: 0px 0px 20px 3px;
 }
 
-
-td{
+td {
     opacity: 0.6;
+}
+
+/* add cards */
+.cards {
+    font-size: 0;
+}
+.card {
+    width: 250px;
+    height: 330px;
+    box-shadow: 0px 0px 20px 3px black;
+    padding: 15px;
+    display: inline-block;
+    margin: 15px; 
+    font-size: 16px;
+    color: black;
+}
+.card > h2 > a{
+  font-size: 30px;
+  color: white;
+}
+.card > h2{
+    margin: 10px 0;
+}
+.card > p {
+    height: 100px;
+    overflow: hidden;
 }
