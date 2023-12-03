@@ -110,6 +110,9 @@ td {
 .cards {
     font-size: 0;
 }
+.cards > h2{
+    display: none;
+}
 .card {
     width: 250px;
     height: 330px;
