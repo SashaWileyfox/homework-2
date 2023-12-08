@@ -2,14 +2,22 @@
 @import url(pictures.css);
 
 
+/* font-family: 'Afacad', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
 
+html, body{
+    scroll-behavior: smooth;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+}
 .header, .footer {
     height: 75px;
     background-color: black;
 }
 
 .header-container, .footer-container {
-    width: 1200px;
+    width: 1230px;
     height: 100%;
     margin: 0 auto;
     padding: 20px 0;
@@ -19,8 +27,9 @@
 }
 
 .logo {
+    font-family: 'Caveat', cursive;
     width: 250px;
-    font-size: 30px;
+    font-size: 40px;
     color: gray;
 }
 
@@ -39,6 +48,7 @@
 }
 
 .menu > li a, .login {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 23px;
     color: gray;
 }
@@ -51,13 +61,15 @@
     color: white;
 }
 
-.main {
+.container {
     width: 1200px;
-    height: 100%;
     margin: 0 auto;
     background-image: url(../picture/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
-    padding: 75px 0;
+    padding: 0 15px;
 }
 
 .link-mountain{
@@ -72,8 +84,9 @@
 }
 
 .section-main {
-    margin: 0 auto 50px ;
+    margin: 0 auto;
     width: 300px;
+    padding: 30px 0;
 }
 
 p span {
@@ -98,9 +111,12 @@ p span {
 table {
     width: 500px;
     height: 300px;
-    margin: 100px auto;
+    margin: 0 auto;
     box-shadow: 0px 0px 20px 3px;
 }
+.cont-table{
+    padding: 100px 0;
+} 
 
 td {
     opacity: 0.6;
@@ -134,3 +150,75 @@ td {
     height: 100px;
     overflow: hidden;
 }
+
+
+/* position */
+
+.img{
+    width: 500px;
+    height: 350px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.img-gallery{
+   width: 100%;
+   height: 100%;
+   object-fit: cover; 
+}
+.section > h2{
+    font-family: 'Afacad', sans-serif;
+    font-size: 32px;
+    padding-bottom: 30px;
+}
+.section{
+    border-bottom: 2px gray solid;
+    padding: 75px 0;
+}
+.gallery :last-child{
+    border-bottom: 0;
+}
+.hover-txt{
+    display: none;
+    width: 100%;
+    height: 150px;
+    overflow-y: auto;
+    background-color: rgba(165, 235, 226, 0.5);
+    position: absolute;
+    top: 50%;
+    margin: -75px 0;
+    padding: 25px;
+}
+.img:hover .hover-txt{
+    display: block;
+    
+}
+
+.fixed-menu{
+    position: fixed;
+    top: 50%;
+    margin: -125px 0;
+    width: 150px;
+    height: 300px;
+    background-color: black;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    text-align: center;
+    font-family: 'Afacad', sans-serif;
+    font-size: 18;
+    overflow: hidden;
+}
+.fixed-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.fixed-menu > li{
+    border-bottom: 1px solid gray;
+}
+.fixed-menu > li > a{
+    color: gray;
+}
+/* }font-family: 'Afacad', sans-serif;
+font-family: 'Inconsolata', monospace;
+font-family: 'Ubuntu', sans-serif; */
