@@ -13,18 +13,28 @@ p{
 }
 .header, .footer {
     height: 75px;
-    background-color: black;
+    background-color: black;  
 }
-
 .header-container, .footer-container {
-    width: 1230px;
+    width: 1200px;
     height: 100%;
     margin: 0 auto;
     padding: 20px 0;
     font-size: 0;
     text-align: center;
-
 }
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-image: url(../picture/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 0 15px;
+}
+
+
 
 .logo {
     font-family: 'Caveat', cursive;
@@ -61,16 +71,7 @@ p{
     color: white;
 }
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    background-image: url(../picture/background.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    padding: 0 15px;
-}
+
 
 .link-mountain{
     color: black;
@@ -175,49 +176,60 @@ td {
     border-bottom: 2px gray solid;
     padding: 75px 0;
 }
-.gallery :last-child{
+.section:last-child{
     border-bottom: 0;
 }
 .hover-txt{
     display: none;
     width: 100%;
     height: 150px;
-    overflow-y: auto;
+    overflow: auto;
     background-color: rgba(165, 235, 226, 0.5);
     position: absolute;
     top: 50%;
-    margin: -75px 0;
+    left: 0;
+    margin: -75px 0 0;
     padding: 25px;
 }
 .img:hover .hover-txt{
-    display: block;
-    
+    display: block; 
 }
 
 .fixed-menu{
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 50%;
-    margin: -125px 0;
+    left: 0;
     width: 150px;
-    height: 300px;
+    height: 400px;
+    margin: -200px 0;
     background-color: black;
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
     text-align: center;
     font-family: 'Afacad', sans-serif;
-    font-size: 18;
+    font-size: 18px;
     overflow: hidden;
 }
-.fixed-menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.fixed-menu>li{
+    flex-grow: 1 ;
+    border-bottom: 1px aliceblue solid;
+    padding: 10px;
+
 }
-.fixed-menu > li{
-    border-bottom: 1px solid gray;
+.fixed-menu > li:hover{
+    background-color: aliceblue;
 }
 .fixed-menu > li > a{
+    width: 100%;
+    display: block;
     color: gray;
+}
+
+
+.last-child:last-child{
+    border: none;
 }
 /* }font-family: 'Afacad', sans-serif;
 font-family: 'Inconsolata', monospace;
